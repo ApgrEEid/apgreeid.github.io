@@ -1,0 +1,34 @@
+* {
+	box-sizing: border-box;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	background-color: #000000;
+	top: 0;
+	left: 0;
+}
+
+.header li {
+	display: inline-block;
+	padding: 1em;
+	padding-right: 2em;
+	padding-left: 2em;
+	text-decoration: none;
+}
+
+.header a {
+	font-family: "Helvetica", "Tahoma", sans-serif;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.header a:hover {
+	color: #f41834;
+	text-decoration: none;
+}
+
+.content p {
+	margin-top: 100px;
+}
