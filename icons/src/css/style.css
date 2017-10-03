@@ -1,0 +1,11 @@
+.container h1 {
+	text-transform: uppercase;
+	font-size: 36px;
+	margin-top: 88px;
+	margin-bottom: 136px;
+}
+
+.text {
+	font-size: 18px;
+	margin-top: 20px;
+}
