@@ -18,3 +18,5 @@
 [Модуль 3. Урок № 9](https://apgreeid.github.io/maket-bootstrap3/src/index.html "Верстка при помощи Bootstrap 3") - Верстка при помощи Bootstrap 3
 
 [Модуль 3. Урок № 10](https://apgreeid.github.io/main.less "Препроцессор LESS для CSS") - Препроцессор LESS для CSS
+
+[Модуль 5. Урок № 13](https://apgreeid.github.io/maket-pixel-perfect/src/index.html "Адаптивная верстка") - Адаптивная верстка
