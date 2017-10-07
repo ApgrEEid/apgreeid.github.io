@@ -20,3 +20,5 @@
 [Модуль 3. Урок № 10](https://apgreeid.github.io/main.less "Препроцессор LESS для CSS") - Препроцессор LESS для CSS
 
 [Модуль 5. Урок № 13](https://apgreeid.github.io/maket-pixel-perfect/src/index.html "Адаптивная верстка") - Адаптивная верстка
+
+[Модуль 5. Практика. Часть 1](https://apgreeid.github.io/practiceM5/src/index.html "Верстка шапки") - Верстка шапки
