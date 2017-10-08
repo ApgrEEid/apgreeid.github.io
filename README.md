@@ -26,3 +26,5 @@
 [Модуль 5. Урок № 14](https://apgreeid.github.io/fonts-lesson/src/index.html "Подключение шрифтов") - Подключение шрифтов
 
 [Модуль 5. Практика. Часть 2](https://apgreeid.github.io/practiceM5/src/index.html "Верстка главного экрана") - Верстка главного экрана
+
+[Модуль 5. Урок № 15](https://apgreeid.github.io/lesson15/src/index.html "Псевдоклассы и псевдоэлементы") - Псевдоклассы и псевдоэлементы
