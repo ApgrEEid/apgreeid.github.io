@@ -22,3 +22,5 @@
 [Модуль 5. Урок № 13](https://apgreeid.github.io/maket-pixel-perfect/src/index.html "Адаптивная верстка") - Адаптивная верстка
 
 [Модуль 5. Практика. Часть 1](https://apgreeid.github.io/practiceM5/src/index.html "Верстка шапки") - Верстка шапки
+
+[Модуль 5. Урок № 14](https://apgreeid.github.io/fonts-lesson/src/index.html "Подключение шрифтов") - Подключение шрифтов
