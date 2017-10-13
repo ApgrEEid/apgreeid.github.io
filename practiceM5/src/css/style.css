@@ -49,6 +49,12 @@ button {
 section {
   padding: 10rem 0;
 }
+.section-header {
+  margin: 2rem 0 11rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3.6rem;
+  text-align: center;
+}
 /* Main */
 .main {
   padding: 3rem 0 5rem;
@@ -158,6 +164,57 @@ section {
   display: table-cell;
   vertical-align: middle;
   text-align: right;
+}
+/* Features parameters */
+.features-block {
+  text-align: center;
+}
+.features-block h3 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 3.5rem;
+}
+.features-block p {
+  display: inline-block;
+  font-size: 1.4rem;
+  width: 80%;
+}
+.features-block a {
+  color: #4aa223;
+}
+.features-block a:hover {
+  text-decoration: underline;
+}
+.features-img {
+  height: 7rem;
+  margin-bottom: 6rem;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+}
+.slick-active {
+  outline: none;
+}
+.arrow {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+.prev {
+  left: 0;
+  background: url(../img/left-arrow.svg) center no-repeat;
+  background-size: 70%;
+}
+.next {
+  right: 0;
+  background: url(../img/right-arrow.svg) center no-repeat;
+  background-size: 70%;
 }
 @media (max-width: 991px) {
   .main {
