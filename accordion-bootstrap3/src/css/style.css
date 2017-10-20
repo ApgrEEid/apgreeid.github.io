@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&subset=cyrillic');
+
+* {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+	background: url(../img/bg.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+a, .panel-body {
+	font-size: 22px;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+}
+
+.head {
+	display: block;
+	margin-top: 70px;
+	text-align: center;
+	color: #0bbaf0;
+	text-transform: uppercase;
+}
+
+.header {
+	font-size: 36px;
+	font-weight: 700;
+	
+}
+
+.header-two {
+	font-size: 24px;
+}
+.panel-group {
+	margin-top: 50px;
+}
+.panel-default>.panel-heading {
+	text-align: center;
+  color: #ffffff;
+  background-color: #0bbaf0;
+  border-color: #0bbaf0;
+}
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border: 2px solid #dcdcdc;
+}

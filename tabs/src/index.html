@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Tabs</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="tabs">
+
+		<ul class="tabs__caption">
+			<li class="active">Вход</li>
+			<li>Регистрация</li>
+		</ul>
+
+		<div class="tabs__content active">
+				<form  class="form" action="#">
+					<input type="text" class="main-form-input" placeholder="Ваше имя">
+					<input type="text" class="main-form-input" placeholder="Ваш пароль">
+					<a class="password" href="">Забыли пароль?</a>
+				</form>
+
+				<div class="notification-block">
+						<input type="checkbox" id="notification">
+						<label for="notification">Напомнить мне</label>
+					</div>
+
+				<div class="enter-button">
+					<a class="button" href="#" >Войти</a>
+				</div>
+			</div>
+
+		<div class="tabs__content">
+			<form  class="form" action="#">
+				<input type="text" class="main-form-input" placeholder="Ваш email">
+				<input type="text" class="main-form-input" placeholder="Ваш пароль">
+				<input type="text" class="main-form-input" placeholder="Повторите ваш пароль">
+			</form>
+
+			<div class="enter-button registration">
+				<a class="button" href="#" >Зарегистрироваться</a>
+			</div>
+		</div>
+
+		</div>
+
+	
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="js/tabs.js"></script>
+</body>
+</html>
