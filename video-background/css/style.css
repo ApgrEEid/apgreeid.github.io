@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+section {
+	display: flex;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	align-items: center;
+	justify-content: center; 
+	overflow: auto;   
+}
+
+.wrapper {
+	display: block;
+	border: none;
+	text-transform: uppercase;
+	font-family: 'Indie Flower', cursive;
+	font-size: 40px;
+	color: #fff;
+}
