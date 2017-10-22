@@ -263,7 +263,29 @@ a.btn-cta {
 /* ======= Hero Section ======= */
 .hero-section {
   min-height: 560px;
+  background: #494d55; 
   position: relative;
+}
+.hero-carousel .carousel-inner .item-1 {
+  background-image: url('../images/hero-1.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hero-carousel .carousel-inner .item-2 {
+  background-image: url('../images/hero-2.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hero-carousel .carousel-inner .item-3 {
+  background-image: url('../images/hero-3.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .hero-section .figure-holder-wrapper {
   position: absolute;
@@ -290,30 +312,7 @@ a.btn-cta {
   height: 560px;
   background-position: center center;
 }
-.hero-carousel .carousel-inner .item-1 {
-  background-attachment: fixed;
-  background-image: url('../images/hero-1.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.hero-carousel .carousel-inner .item-2 {
-  background-attachment: fixed;
-  background-image: url('../images/hero-2.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.hero-carousel .carousel-inner .item-3 {
-  background-attachment: fixed;
-  background-image: url('../images/hero-3.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 .hero-carousel .carousel-inner .heading {
   font-size: 30px;
   line-height: 1.4;
@@ -329,7 +328,6 @@ a.btn-cta {
 }
 /* ======= About Section ======= */
 .about-section {
-  position: relative;
   padding-top: 90px;
 }
 .about-section .section-title {
