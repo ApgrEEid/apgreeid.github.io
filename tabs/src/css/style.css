@@ -18,10 +18,10 @@ body {
 	background: url(../img/bg.png) 0 0 no-repeat;
 	background-size: 100%;
 }
-::-webkit-input-placeholder {color:#ffffff; font: 24px "MyriadProRegular", Arial, sans-serif; padding-left: 24px;}
-::-moz-placeholder          {color:#ffffff; font: 24px "MyriadProRegular", Arial, sans-serif; padding-left: 24px;}/* Firefox 19+ */
-:-moz-placeholder           {color:#ffffff; font: 24px "MyriadProRegular", Arial, sans-serif; padding-left: 24px;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#ffffff; font: 24px "MyriadProRegular", Arial, sans-serif; padding-left: 24px;}
+::-webkit-input-placeholder {color:#ffffff; font: 24px "MyriadProRegular", Arial, sans-serif; padding-left: 3px;}
+::-moz-placeholder          {color:#ffffff; font: 24px "MyriadProRegular", Arial, sans-serif; padding-left: 3px;}/* Firefox 19+ */
+:-moz-placeholder           {color:#ffffff; font: 24px "MyriadProRegular", Arial, sans-serif; padding-left: 3px;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#ffffff; font: 24px "MyriadProRegular", Arial, sans-serif; padding-left: 3px;}
 a {
 	color: #ffffff;
 	text-decoration: none;
@@ -172,6 +172,7 @@ h2 {
 .main-form-input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
 .main-form-input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
 .main-form-input {
+	padding-left: 24px;
 	font-size: 24px;
 	background-color: #1c1b1b;
 	border: none;
