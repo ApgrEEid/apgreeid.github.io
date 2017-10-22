@@ -322,6 +322,63 @@ section {
 		}
 	}
 }
+
+/* Feedback */
+.feedback {
+	background: url(../img/feedback/feedback-bg.png) 0 0 no-repeat;
+	background-size: cover;
+	&-prev-btn {
+		left: -4rem;
+	}
+	&-next-btn {
+		right: -4rem;
+	}
+	&-text {
+		position: relative;
+		margin-top: 2rem;
+		padding: 1rem;
+		border: 2px solid @icons-color;
+		font-style: italic;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: -2rem;
+			left: 4rem;
+			width: 2rem;
+			height: 2rem;
+			background-color: #ffffff;
+			border: 2px solid @icons-color;
+			border-bottom: none;
+			border-top-right-radius: 100px;
+		}
+	}
+	&-slider {
+		background-color: #ffffff;
+		box-shadow: 0 1.2rem 1.8rem rgba(0, 0, 0, 0.11);
+		padding: 5.5rem 6rem;
+		outline: none;
+		p {
+			font-size: 1.6rem;
+		}
+		.media {
+			margin-top: 4.5rem;
+			font-size: 1.4rem;
+			h4 {
+				.bold();
+			}
+		}
+		&-btn {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 4rem;
+			height: 5rem;
+			background-color: @icons-color;
+			border: none;
+		}
+	}
+}
 /* Modal windows */
 .popup {
 	display: none;

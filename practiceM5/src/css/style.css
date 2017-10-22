@@ -279,6 +279,64 @@ section {
   background-size: 100%;
   vertical-align: center;
 }
+/* Feedback */
+.feedback {
+  background: url(../img/feedback/feedback-bg.png) 0 0 no-repeat;
+  background-size: cover;
+}
+.feedback-prev-btn {
+  left: -4rem;
+}
+.feedback-next-btn {
+  right: -4rem;
+}
+.feedback-text {
+  position: relative;
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 2px solid #46b814;
+  font-style: italic;
+}
+.feedback-text::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -2rem;
+  left: 4rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #ffffff;
+  border: 2px solid #46b814;
+  border-bottom: none;
+  border-top-right-radius: 100px;
+}
+.feedback-slider {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1.2rem 1.8rem rgba(0, 0, 0, 0.11);
+          box-shadow: 0 1.2rem 1.8rem rgba(0, 0, 0, 0.11);
+  padding: 5.5rem 6rem;
+  outline: none;
+}
+.feedback-slider p {
+  font-size: 1.6rem;
+}
+.feedback-slider .media {
+  margin-top: 4.5rem;
+  font-size: 1.4rem;
+}
+.feedback-slider .media h4 {
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.feedback-slider-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 4rem;
+  height: 5rem;
+  background-color: #46b814;
+  border: none;
+}
 /* Modal windows */
 .popup {
   display: none;
