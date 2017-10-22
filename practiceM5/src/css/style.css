@@ -46,6 +46,35 @@ textarea {
   cursor: pointer;
   background-color: #e3a103;
 }
+/* Input settings */
+.form {
+  /* Input field */
+  /* Captions to fields */
+  /* Button: "Отправить заявку" */
+}
+.form-input {
+  display: block;
+  margin: 2.1rem 0;
+  width: 100%;
+  border: 0.1rem solid #dddddd;
+  border-radius: 0.5rem;
+  padding: 1.7rem;
+}
+.form label {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  background-color: #ffffff;
+}
+.form-btn {
+  display: block;
+  width: 100%;
+  height: 6.8rem;
+  font-size: 1.6rem;
+}
 /* Typography */
 section {
   padding: 10rem 0;
@@ -113,37 +142,11 @@ section {
   padding: 4.8rem 5.1rem;
   background-color: #ffffff;
   text-align: center;
-  /* Input field */
-  /* Captions to fields */
-  /* Button: "Отправить заявку" */
   /* Caption under the button */
 }
 .main-form-header {
   margin-bottom: 3.7rem;
   font-size: 1.8rem;
-}
-.main-form-input {
-  display: block;
-  margin: 2.1rem 0;
-  width: 100%;
-  border: 0.1rem solid #dddddd;
-  border-radius: 0.5rem;
-  padding: 1.7rem;
-}
-.main-form label {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-  padding: 0.5rem;
-  font-size: 1.3rem;
-  background-color: #ffffff;
-}
-.main-form-btn {
-  display: block;
-  width: 100%;
-  height: 6.8rem;
-  font-size: 1.6rem;
 }
 .main-form small {
   display: block;
@@ -281,8 +284,10 @@ section {
 }
 /* Feedback */
 .feedback {
+  position: relative;
   background: url(../img/feedback/feedback-bg.png) 0 0 no-repeat;
   background-size: cover;
+  /* Feedback submit*/
 }
 .feedback-prev-btn {
   left: -4rem;
@@ -337,6 +342,31 @@ section {
   background-color: #46b814;
   border: none;
 }
+.feedback-form {
+  margin-top: 5.9rem;
+  padding: 4rem 10rem;
+  background-color: #fff;
+  text-align: center;
+}
+.feedback-form h3 {
+  margin-bottom: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2.2rem;
+}
+.feedback-form label {
+  -webkit-transform: translate(-50%, 0.8rem);
+          transform: translate(-50%, 0.8rem);
+}
+.feedback-btn {
+  max-width: 30rem;
+  margin: auto;
+}
+.hand {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 30rem;
+}
 /* Modal windows */
 .popup {
   display: none;
@@ -382,6 +412,14 @@ section {
 .popup-header {
   font-family: 'ProximaNova_bold', sans-serif;
 }
+@media (max-width: 1199px) {
+  .feedback-form {
+    padding: 3rem 5rem;
+  }
+  .feedback .fotorama {
+    margin-bottom: 3rem;
+  }
+}
 @media (max-width: 991px) {
   .main {
     background-position: top right;
@@ -410,6 +448,13 @@ section {
   .section-header_light {
     margin-bottom: 0;
   }
+  .feedback-form label {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .hand {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .main {
@@ -423,5 +468,21 @@ section {
   }
   .wrap-block {
     text-align: center;
+  }
+  .feedback .form {
+    padding: 2rem;
+  }
+  .feedback-slider {
+    padding: 3.5rem;
+  }
+  .feedback-slider .arrow {
+    width: 3rem;
+    height: 4rem;
+  }
+  .feedback .prev {
+    left: 0;
+  }
+  .feedback .next {
+    right: 0;
   }
 }
