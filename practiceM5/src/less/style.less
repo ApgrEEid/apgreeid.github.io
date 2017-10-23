@@ -411,6 +411,54 @@ section {
 	left: 0;
 	max-width: 30rem;
 }
+
+/* Scheme settings */
+.scheme {
+	background: #fff url(../img/scheme/scheme-bg.png) bottom -10rem right -15rem no-repeat;
+	background-size: 65rem;
+	&-block {
+		min-height: 30rem;
+		h3{
+			font-size: 2rem;
+			.bold();
+		}
+	}
+}
+
+/* All inclusive */
+.all-inclusive {
+	background: @bg-light;
+	.media {
+		min-height: 8rem;
+		h4 {
+			.bold();
+			font-size: 1.6rem;
+		}
+		p {
+			font-size: 1.1rem;
+		}
+	}
+}
+.circle {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-color: @icons-color;
+	border-radius: 50%;
+	&-border {
+		display: inline-block;
+		width: 5rem;
+		height: 5rem;
+		padding: 0.3rem;
+		border: 0.2rem solid @icons-color;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 4rem;
+		color: #fff;
+		.bold();
+		font-size: 1.9rem;
+	}
+}
 /* Modal windows */
 .popup {
 	display: none;
@@ -461,6 +509,11 @@ section {
 		}
 		.fotorama {
 			margin-bottom: 3rem;
+		}
+	}
+	.all-inclusive {
+		.media {
+			min-height: 11rem;
 		}
 	}
 }
@@ -533,11 +586,23 @@ section {
 				height: 4rem;
 			}
 		}
-		.prev {
+		&-slider-btn {
+			width: 3rem;
+			height: 4rem;
+		}
+		&-prev-btn {
 			left: 0;
+			z-index: 99;
 		}
-		.next {
+		&-next-btn {
 			right: 0;
+			z-index: 99;
 		}
+	}
+
+	.scheme {
+		background: none;
+		text-align: center;
+		min-height: 20rem;
 	}
 }
