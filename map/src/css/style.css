@@ -1,0 +1,60 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+span {
+  display: block;
+  margin: 40px 0;
+}
+
+a {
+  display: block;
+  color: #fff;
+  margin: 20px 0;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.contacts {
+  position: absolute;
+  top: 0;
+  left: 500px;
+  min-height: 400px;
+  max-width: 380px;
+  padding: 35px 66px;
+  color: #fff;
+  background-color: #c60b0b;
+  text-align: center;
+}
+
+.footer {
+  padding: 19px 0;
+  background-color: #fff;
+  min-height: 100px;
+}
+
+.footer p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.certificate p {
+  display: inline-block;
+  text-align: center;
+  padding-top: 18px;
+  font-size: 14px;
+}
+
+.footer-contacts a {
+  margin: 0 0 11px 0;
+  font-size: 22px;
+  color: #000;
+}
+
+.footer-contacts p {
+  line-height: 1;
+  font-size: 14px;
+}
