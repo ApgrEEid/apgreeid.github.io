@@ -413,6 +413,63 @@ section {
   font-family: 'ProximaNova_bold', sans-serif;
   font-size: 1.9rem;
 }
+/* Problems */
+.problems {
+  position: relative;
+}
+.problems-girl {
+  position: absolute;
+  width: 30rem;
+  bottom: 0;
+  left: 50%;
+  margin-left: -19rem;
+}
+.problems-list {
+  border: 0.4rem solid;
+  padding: 2rem;
+  min-height: 35rem;
+  margin-bottom: 2rem;
+}
+.problems-list h4 {
+  font-size: 2.1rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.problems-list ul {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 2rem;
+}
+.problems-list ul li {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 2.5rem;
+}
+.problems-list ul li:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  background-color: #000;
+}
+.problems-list_bad {
+  border-color: #e8e8e8;
+}
+.problems-list_bad h4 {
+  opacity: 0.5;
+}
+.problems-list_bad ul li:before {
+  background: url(../img/problems/bad-sign.svg) 0 0 no-repeat;
+}
+.problems-list_good {
+  border-color: #46b814;
+}
+.problems-list_good ul li:before {
+  background: url(../img/problems/good-sign.svg) 0 0 no-repeat;
+}
 /* Modal windows */
 .popup {
   display: none;
@@ -468,6 +525,9 @@ section {
   .all-inclusive .media {
     min-height: 11rem;
   }
+  .problems-list {
+    min-height: 40rem;
+  }
 }
 @media (max-width: 991px) {
   .main {
@@ -502,6 +562,12 @@ section {
             transform: translate(-50%, -50%);
   }
   .hand {
+    display: none;
+  }
+  .problems-list {
+    min-height: auto;
+  }
+  .problems-girl {
     display: none;
   }
 }
