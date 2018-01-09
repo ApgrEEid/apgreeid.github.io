@@ -52,7 +52,8 @@ textarea {
   /* Captions to fields */
   /* Button: "Отправить заявку" */
 }
-.form-input {
+.form-input,
+.form-textarea {
   display: block;
   margin: 2.1rem 0;
   width: 100%;
@@ -80,7 +81,7 @@ section {
   padding: 10rem 0;
 }
 .section-header {
-  margin: 2rem 0 11rem;
+  margin: 2rem 0 7rem;
   text-align: center;
 }
 .section-header_light {
@@ -193,7 +194,7 @@ section {
   width: 80%;
 }
 .features-block a {
-  color: #4aa223;
+  color: #46b814;
 }
 .features-block a:hover {
   text-decoration: underline;
@@ -470,6 +471,95 @@ section {
 .problems-list_good ul li:before {
   background: url(../img/problems/good-sign.svg) 0 0 no-repeat;
 }
+/* Materials */
+.materials {
+  background: #ffffff url(../img/materials/materials-bg.png) 0 0 no-repeat;
+}
+.materials img {
+  display: block;
+  margin: auto;
+}
+.materials-offer {
+  text-align: center;
+  margin-top: 4rem;
+}
+.materials-link {
+  display: block;
+  color: #46b814;
+}
+.materials-link:hover {
+  color: #348a0f;
+}
+/* Tour */
+.tour {
+  background: #ffffff url(../img/tour/bg-tour.png) -37rem no-repeat;
+  background-size: cover;
+}
+.tour-subtitle {
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+}
+/* Upsell */
+.upsell {
+  background: #286b0a;
+  color: #fff;
+}
+.upsells {
+  margin-top: 3rem;
+}
+.upsell img {
+  display: inline-block;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 33rem;
+}
+.upsell p {
+  font-size: 2rem;
+}
+.upsell-block {
+  min-height: 30rem;
+  text-align: center;
+}
+/* Contacts */
+.contacts {
+  background: #ffffff url(../img/contacts/bg-contacts.png) center bottom no-repeat;
+  background-size: cover;
+  /* Form-header */
+}
+.contacts h2 {
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.contacts p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.contacts-link {
+  display: inline-block;
+  color: #1a1820;
+  border-bottom: 1px dotted #1a1820;
+}
+.contacts-link:hover {
+  color: #020203;
+}
+.contacts-form h2 {
+  font-size: 1.9rem;
+  font-family: 'ProximaNova_reg', sans-serif;
+  margin-bottom: 3rem;
+}
+/* Footer */
+footer {
+  padding: 4rem 0;
+}
+.footer-contacts {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+.footer-contacts p {
+  margin: 0;
+}
+.footer-dev-logo {
+  text-align: right;
+}
 /* Modal windows */
 .popup {
   display: none;
@@ -569,6 +659,29 @@ section {
   }
   .problems-girl {
     display: none;
+  }
+  .tour {
+    background: none;
+    background-color: #f5f5f5;
+  }
+  .tour-content {
+    margin-top: 0rem;
+  }
+  .contacts {
+    background: none;
+    background-color: #f5f5f5;
+  }
+  .contacts-form {
+    margin-top: 3rem;
+  }
+  footer {
+    text-align: center;
+  }
+  .footer-contacts {
+    margin: 2rem 0;
+  }
+  .footer-dev-logo {
+    text-align: center;
   }
 }
 @media (max-width: 767px) {

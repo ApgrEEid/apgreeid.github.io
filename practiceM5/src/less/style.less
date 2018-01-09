@@ -40,6 +40,7 @@
 @light: #ffffff;
 @border-input: #dddddd;
 @problems-color: #e8e8e8;
+@upsell-bg: #286b0a;
 
 /* Basic settings */
 html {
@@ -76,7 +77,7 @@ input, a, button, textarea {
 /* Input settings */
 .form {
 	/* Input field */
-	&-input {
+	&-input, &-textarea {
 		display: block;
 		margin: 2.1rem 0;
 		width: 100%;
@@ -118,7 +119,7 @@ section {
 	p {
 		font-size: 1.4rem;
 	}
-	margin: 2rem 0 11rem;
+	margin: 2rem 0 7rem;
 	text-align: center;
 }
 
@@ -233,7 +234,7 @@ section {
 			width: 80%;
 		}
 		a {
-			color: #4aa223;
+			color: @icons-color;
 			&:hover{
 				text-decoration: underline;
 			}
@@ -518,7 +519,105 @@ section {
 		}
 	}
 }
+/* Materials */
+.materials {
+	background: #fff url(../img/materials/materials-bg.png) 0 0 no-repeat;
+	img {
+		display: block;
+		margin: auto;
+	}
+	&-offer {
+		text-align: center;
+		margin-top: 4rem;
+	}
+	&-link {
+		display: block;
+		color: @icons-color;
+		&:hover {
+			color: darken(@icons-color, 10%);
+		}
+	}
+}
 
+/* Tour */
+.tour {
+	background: #fff url(../img/tour/bg-tour.png) -37rem no-repeat;
+	background-size: cover;
+	&-subtitle {
+		margin-bottom: 3rem;
+		font-size: 2.2rem;
+	}
+}
+
+/* Upsell */
+
+.upsell {
+	background: @upsell-bg;
+	color: #fff;
+	&s {
+		margin-top: 3rem;
+	}
+	img {
+		display: inline-block;
+		margin-bottom: 2rem;
+		width: 100%;
+		max-width: 33rem;
+	}
+	p {
+		font-size: 2rem;
+	}
+	&-block {
+		min-height: 30rem;
+		text-align: center;
+	}
+}
+
+/* Contacts */
+.contacts {
+	background: #fff url(../img/contacts/bg-contacts.png) center bottom no-repeat;
+	background-size: cover;
+	h2 {
+		.bold();
+	}
+	p {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+	&-link {
+		display: inline-block;
+		color: @text-color;
+		border-bottom: 1px dotted @text-color;
+		&:hover {
+			color: darken(@text-color, 10%);
+		}
+	}
+	/* Form-header */
+	&-form {
+		h2 {
+			font-size: 1.9rem;
+			.reg();
+			margin-bottom: 3rem;
+		}
+	}
+}
+
+/* Footer */
+footer {
+	padding: 4rem 0;
+}
+
+.footer {
+	&-contacts {
+		text-align: center;
+		padding-top: 0.5rem;
+		p {
+			margin: 0;
+		}
+	}
+	&-dev-logo {
+		text-align: right;
+	}
+}
 /* Modal windows */
 .popup {
 	display: none;
@@ -628,6 +727,32 @@ section {
 		}
 		&-girl {
 			display: none;
+		}
+	}
+	.tour {
+		background: none;
+		background-color: @bg-light;
+		&-content {
+			margin-top: 0rem;
+		}
+	}
+
+	.contacts {
+		background: none;
+		background-color: @bg-light;
+		&-form {
+			margin-top: 3rem;
+		}
+	}
+	footer {
+		text-align: center;
+	}
+	.footer {
+		&-contacts {
+			margin: 2rem 0;
+		}
+		&-dev-logo {
+			text-align: center;
 		}
 	}
 }
