@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Графики</title>
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<!-- Custom styles for this template -->
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/mdb.css.css" rel="stylesheet">
+		<!-- Example of simple line chart -->
+		<script>
+			window.onload = function () {
+
+				var chart = new CanvasJS.Chart("chartContainer", {
+					animationEnabled: true,
+					theme: "light2",
+					title:{
+						text: "Пример линейной диаграммы"
+					},
+					axisY:{
+						includeZero: false
+					},
+					data: [{        
+						type: "line",       
+						dataPoints: [
+							{ y: 18 },
+							{ y: 22},
+							{ y: 25, indexLabel: "максимальная",markerColor: "red", markerType: "triangle" },
+							{ y: 17 },
+							{ y: 5 },
+							{ y: 13 },
+							{ y: 14 },
+							{ y: 3 },
+							{ y: -1 , indexLabel: "минимальная",markerColor: "DarkSlateGrey", markerType: "cross" },
+							{ y: 21 },
+							{ y: 10 },
+							{ y: 6 }
+						]
+					}]
+				});
+			chart.render();
+			chart = {};
+			//Zooming and Panning 
+			var chart2 = new CanvasJS.Chart("chartContainer2", {
+					animationEnabled: true,
+					zoomEnabled: true,
+					title:{
+						text: "Пример масштабирования и панорамирования" 
+					},
+					axisY :{
+						includeZero:false
+					},
+					data: data  // random generator below
+				});
+				chart2.render();
+				chart2 = {};
+
+				// Column Chart
+				var chart3 = new CanvasJS.Chart("chartContainer3", {
+					animationEnabled: true,
+					theme: "light2", // "light1", "light2", "dark1", "dark2"
+					title:{
+						text: "Пример диаграммы столбцов"
+					},
+					axisY: {
+						title: "Уровень потребления"
+					},
+					data: [{        
+						type: "column",  
+						showInLegend: true, 
+						legendMarkerColor: "grey",
+						legendText: "Потребление питания",
+						dataPoints: [      
+							{ y: 3, label: "Датчик давления" },
+							{ y: 1,  label: "Датчик температуры" },
+							{ y: 2,  label: "Датчик расстояния" },
+							{ y: 7,  label: "Веб-камера" },
+						]
+					}]
+				});
+				chart3.render();
+				chart3 = {};
+			}
+
+			
+			var limit = 300;
+
+			var y = 0;
+			var data = [];
+			var dataSeries = { type: "line" };
+			var dataPoints = [];
+			for (var i = 0; i < limit; i += 1) {
+				y += (Math.random() * 10 - 5);
+				dataPoints.push({
+					x: i - limit / 2,
+					y: y                
+				});
+			}
+			dataSeries.dataPoints = dataPoints;
+			data.push(dataSeries);
+
+		</script>
+
+</head>
+
+<body>
+
+		<div id="wrapper">
+
+				<!-- Sidebar -->
+				<div id="sidebar-wrapper">
+						<ul class="sidebar-nav">
+								<li class="sidebar-brand">
+										<a href="index.html" class="main-name">
+												<img src="img/logo.svg" alt="">
+										</a>
+								</li>
+								<li>
+										<a href="graphics.html">Графики</a>
+								</li>
+								<li>
+										<a href="technology.html">Используемые технологии</a>
+								</li>
+								<li>
+										<a href="contact.html">Обратная связь</a>
+								</li>
+						</ul>
+				</div>
+				<!-- /#sidebar-wrapper -->
+
+				<!-- Page Content -->
+				<div id="page-content-wrapper">
+						<div class="container-fluid">
+							<div class="nav-icon" id="menu-toggle">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+								<h1>Графики</h1>
+								<p>На данной странице можно увидеть примеры используемых графиков</p>
+								<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+								<p>Линейные диаграммы рисуются путем соединения всех точек данных в рядах данных с использованием сегментов прямой линии. Графики линий обычно используются для визуализации тенденций в данных, непрерывно изменяющихся в течение определенного периода времени или диапазона. Линейные диаграммы интерактивны, настраиваются и легко интегрируются с Bootstrap. Они отлично работают даже с большим количеством точек данных и поддерживают анимацию, масштабирование, панорамирование и т. д. В данном примере показана простая линейная диаграмма.</p>
+								<div id="chartContainer2" style="height: 370px; width: 100%;"></div>
+								<p>Линейные графики, как и любая другая диаграмма в библиотеке, поддерживают масштабирование и панорамирование. Это одна из самых важных особенностей диаграммы, особенно при работе с большим количеством данных. В данном примере показана линейная диаграмма с возможностью масштабирования и панорамирования.</p>
+								<div id="chartContainer3" style="height: 370px; width: 100%;"></div>
+								<p>В столбчатых диаграммах используются прямоугольные столбцы для сравнения значений между разными категориями. Диаграммы столбцов иногда называются вертикальными диаграммами. Диаграммы интерактивны, поддерживают анимацию, масштабирование, панорамирование и экспорт в качестве изображения. В приведенном примере показана простая диаграмма столбцов.</p>
+				</div>
+				<!-- /#page-content-wrapper -->
+
+		</div>
+		<!-- /#wrapper -->
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+		<!-- Menu Toggle Script -->
+		<script>
+		$("#menu-toggle").click(function(e) {
+				e.preventDefault();
+				$("#wrapper").toggleClass("toggled");
+		});
+		</script>
+		<!-- Nav Icon Script -->
+		<script>
+			$(document).ready(function(){
+				$('.nav-icon').click(function(){
+					$(this).toggleClass('open');
+				});
+			});
+		</script>
+</body>
+
+</html>

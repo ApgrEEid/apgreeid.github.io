@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="scripts/jquery.js" type="text/javascript"></script>
+<link rel=stylesheet href="scripts/css.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Der Kerker</title>
+</head>
+
+<body>
+
+<center><div id="wingame">
+<p>You escaped with your life! Congratulations!</p>
+<p class="link"><a href="index.html">Play again</a>
+</div></center>
+
+<center><div id="killself" style="display:none;">
+<p>You killed yourself...</p>
+<p class="link"><a href="index.html">Play again</a>
+</div></center>
+
+<center><div id="foodpoisoning" style="display:none;">
+<p>You ate some bad food and have died as a result.</p>
+<p class="link"><a href="index.html">Play again</a>
+</div></center>
+
+<div id="container">
+<div id="compass"><img src="images/compass.png" /></div>
+
+<div id="console">
+
+
+<!--
+MAIN GAME PLOT
+-->
+<p id="message_begin">Welcome to Der Kerker. At any time you may type "help" for a list of commands that you can use.</p>
+
+<p id="message_help">Help: (replace italicized words)<br />
+take <i>object</i>: takes the specified object and puts it in your inventory<br />
+eat <i>food</i>: eats indicated food item<br />
+kill <i>creature</i> with <i>object</i>: kills indicated creature with specified object<br />
+inventory: lists everything you are currently carrying<br />
+unlock <i>door</i> with <i>object</i>: unlocks door with the object you specify<br />
+go <i>direction</i>: attempts to travel in direction (north, east, south, west)<br />
+search <i>object</i>: searches the indicated object for items</p>
+
+<p id="area_main">You find yourself in a jail cell. You have no idea how you got here. Directly ahead of you to the north is the jail door. You hear the sound of metal drop and out of the corner of your eye you see a rat scurry into the shadows. You notice a paper clip lying there. Also around the floor are some dead bugs as well as your lunch tray from the day's meal.</p>
+
+<p id="area_hallway">You have entered a hallway. To the west and to the east the dark hallway continues. To the south is the jail room from where you came. The only source of light is a torch hanging on the wall. Beneath the torch lies a mysterious note. Perhaps it was left by your captors.</p>
+
+<p id="area_torture">You have entered a room that seems to be a place of great anguish. Strange and grotesque looking devices hang from the walls and ceiling. There's a whip hanging on the wall. After a quick observation, you notice that the room appears fairly large, and a table sits in the corner. To the south there is a doorway. To the west is the hallway that you came from.</p>
+
+<p id="area_morgue">
+As you advance south, you begin to hear gurgling noises. When you enter the room, you see a zombie feasting on the dead bodies of the morgue!
+</p>
+
+<p id="area_westhall">As you move west, you come upon another junction. To the north and south are some dark rooms. You came from the east.</p>
+
+<p id="area_exit">You enter a room with a strange and decorated door. The door appears to lead somewhere, but it also looks locked. Upon closer inspection, you discover that the lock cannot be picked and that a key is required to open it. To the south is the way you came from.</p>
+
+<p id="area_bonus">You enter what appears to be a storage room. It is empty except for a crate in the corner. It looks like it hasn't been touched in years.</p>
+
+<p id="message_inventory">
+</p>
+
+<!--
+ALLOWS CONTENT TO BE INSERTED BEFORE THIS
+-->
+<div id="placeholder"></div>
+
+</div>
+<!--
+INPUT
+-->
+<form onsubmit="return false;">
+<center><input type="text" id="command_line" size="50" autofocus="autofocus" /></center>
+</form>
+</div>
+
+<p class="copyright"></p>
+
+<script type="text/javascript" src="scripts/game.js"></script>
+
+</body>
+
+</html>

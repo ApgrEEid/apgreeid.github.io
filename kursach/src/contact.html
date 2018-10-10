@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Тестовая страница</title>
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.css">
+		<!-- Custom styles for this template -->
+		<link href="css/style.css" rel="stylesheet">
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+
+		<div id="wrapper">
+
+				<!-- Sidebar -->
+				<div id="sidebar-wrapper">
+						<ul class="sidebar-nav">
+								<li class="sidebar-brand">
+										<a href="index.html" class="main-name">
+												<img src="img/logo.svg" alt="">
+										</a>
+								</li>
+								<li>
+										<a href="graphics.html">Графики</a>
+								</li>
+								<li>
+										<a href="technology.html">Используемые технологии</a>
+								</li>
+								<li>
+										<a href="contact.html">Обратная связь</a>
+								</li>
+						</ul>
+				</div>
+				<!-- /#sidebar-wrapper -->
+
+				<!-- Page Content -->
+				<div id="page-content-wrapper">
+						<div class="container-fluid">
+							<div class="nav-icon" id="menu-toggle">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<h1>Обратная связь</h1>
+
+              <p class="lead">Если у вас есть какие-то вопросы или предложения, вы можете связаться с нами через эту контактную форму</p>
+              <form id="contact-form" method="post" action="php/mail.php" role="form">
+
+                  <div class="messages"></div>
+
+                  <div class="controls">
+
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_name">Имя *</label>
+                                  <input id="form_name" type="text" name="name" class="form-control" placeholder="Пожалуйста, введите свое имя *" required="required" data-error="Пожалуйста, введите свое имя.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_lastname">Фамилия *</label>
+                                  <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Пожалуйста, введите вашу фамилию *" required="required" data-error="Пожалуйста, введите вашу фамилию.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_email">Email *</label>
+                                  <input id="form_email" type="email" name="email" class="form-control" placeholder="Пожалуйста, введите вашу эл. почту *" required="required" data-error="Пожалуйста, введите вашу эл. почту.">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                              <div class="form-group">
+                                  <label for="form_phone">Номер</label>
+                                  <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Пожалуйста, введите свой номер телефона">
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <label for="form_message">Сообщение *</label>
+                                  <textarea id="form_message" name="message" class="form-control" placeholder="Ваше сообщение *" rows="4" required="required" data-error="Пожалуйста, оставьте ваше сообщение"></textarea>
+                                  <div class="help-block with-errors"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <input type="submit" class="btn btn-success btn-send" value="Отправить сообщение">
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <p class="text-muted"><strong>*</strong> Эти поля обязательны.</p>
+                          </div>
+                      </div>
+                  </div>
+
+              </form>
+
+						</div>
+				</div>
+				<!-- /#page-content-wrapper -->
+
+		</div>
+		<!-- /#wrapper -->
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/mdb.js"></script>
+		<script type="text/javascript" src="js/validator.js"></script>
+		<script type="text/javascript" src="js/contact.js"></script>
+		<!-- Menu Toggle Script -->
+		<script>
+		$("#menu-toggle").click(function(e) {
+				e.preventDefault();
+				$("#wrapper").toggleClass("toggled");
+		});
+		</script>
+
+		<!-- Nav Icon Script -->
+		<script>
+			$(document).ready(function(){
+				$('.nav-icon').click(function(){
+					$(this).toggleClass('open');
+				});
+			});
+		</script>
+  
+		<!-- Validation form -->
+		
+</body>
+
+</html>

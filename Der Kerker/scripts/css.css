@@ -1,0 +1,160 @@
+/* CSS Document */
+@font-face {
+        font-family: "Console";
+        src: url("fonts/CPmono.ttf") format("truetype");
+}
+/*@font-face {
+        font-family: "Con sole";
+        src: url("fonts/CPmono.eot") format("opentype");
+}*/
+
+body {
+	background-color: black;	
+}
+
+.copyright {
+	color: #333333;
+	font-size: 13px;
+}
+
+#compass {
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	top: 50%;
+	left: 50%;
+	margin-top: -125px;
+	margin-left: -650px;
+	display: none;
+}
+
+#container {
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -400px;
+}
+
+#console {
+	background-color:black; 
+	height: 400px; 
+	width: 800px; 
+	margin: 0 auto;
+	overflow: auto;
+	color: white;
+}
+
+#console p {
+	color: white;
+	display: none;
+	font-size: 17px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+#wingame {
+	display: none;
+	height: 500px;
+	width: 1000px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -500px;
+	margin-top: -250px;
+}
+
+#wingame p {
+	font-size: 30px;
+	padding-top: 175px;
+	color: white;
+}
+
+#wingame p.link {
+	font-size: 15px;
+	padding-top: 0px;
+}
+
+#wingame a {
+	color: white;
+}
+
+#wingame a:hover {
+	color: red;
+}
+
+#foodpoisoning {
+	display: none;
+	height: 500px;
+	width: 1000px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -500px;
+	margin-top: -250px;
+}
+
+#foodpoisoning p {
+	font-size: 30px;
+	padding-top: 175px;
+	color: white;
+}
+
+#foodpoisoning p.link {
+	font-size: 15px;
+	padding-top: 0px;
+}
+
+#foodpoisoning a {
+	color: white;
+}
+
+#foodpoisoning a:hover {
+	color: red;
+}
+
+#killself {
+	display: none;
+	height: 500px;
+	width: 1000px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -500px;
+	margin-top: -250px;
+}
+
+#killself p {
+	font-size: 30px;
+	padding-top: 175px;
+	color: white;
+}
+
+#killself p.link {
+	font-size: 15px;
+	padding-top: 0px;
+}
+
+#killself a {
+	color: white;
+}
+
+#killself a:hover {
+	color: red;
+}
+
+#command_line {
+	display: none;
+}
+
+input {
+	background-color: black;
+	color: white;
+	border: 1px solid #333;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 17px;
+}
+
+input:focus {
+	outline: none;
+}

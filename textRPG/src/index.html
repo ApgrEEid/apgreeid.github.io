@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>RPG</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="console">
+		<p id="message-startgame">Добро пожаловать в мою игру! Для подробной информации по командам введите "помощь"</p>
+		<p id="area-northcorridor">Вы находитесь в северном корридоре</p>
+	</div>
+
+	<!-- PLACEHOLDER: Строка, в которую будут вводится команды -->
+	<div id="placeholder"></div>
+
+	<!--При нажатии клавиши Enter будет отправлено сообщение и не будет закрыта текущая страница -->
+	<form onsubmit="return false">
+		<input type="text" size="50" autofocus="autofocus" id="command-line" />
+	</form>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+</body>
+</html>
